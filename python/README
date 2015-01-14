@@ -1,0 +1,19 @@
+downloader.py
+---------------
+"""
+Download a list of urls and store them to disk.
+
+Parameters
+-----------
+--urls: optional, a tuples target urls to download. Each one must be enclosed in "()". 
+        Can't be used with '--urls_file'
+--urls-file: path to a file containing target urls each in a separate line. Can't be used with 
+             '--urls'
+--output-dir: path to an existing directory where downloaded urls are stored
+
+"""
+
+Examples:
+downloader.py --urls (http://webpages.uncc.edu/~wshalaby/files/cv_walid_shalaby.pdf)(http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf)(http://anthology.aclweb.org/P/P08/P08-1086.pdf) --output_dir ./
+downloader.py --urls_file urls.txt --output_dir ./
+
